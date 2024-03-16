@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Author : ame colephillips
+Author : colephillips
 Date   : 2024-03-16
 Purpose: Picnic game
 """
