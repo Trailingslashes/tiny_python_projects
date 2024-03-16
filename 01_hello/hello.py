@@ -2,7 +2,7 @@
 """
 Author : colephillips <colephillips@localhost>
 Date   : 2024-03-06
-Purpose: Rock the Casbah
+Purpose: Say Hello
 """
 
 import argparse
@@ -16,22 +16,29 @@ def get_args():
         description='Say hello',
         formatter_class=argparse.ArgumentDefaultsHelpFormatter)
 
-    parser.add_argument('-n','--name',
+    parser.add_argument('-n',
+                        '--name',
                         metavar='str',
                         default='World',
-                        help='The name to greet')
+                        help='Say hello!')
 
     return parser.parse_args()
 
 
 # --------------------------------------------------
 def main():
-    """Say hello"""
+    """Say hello
 
+    Args:
+        name (str): name to say hello to
+
+    Returns:
+        None
+
+    """
     args = get_args()
-    # get args
     str_arg = args.name
-    
+
     print(f"Hello, {str_arg}!")
 
 
